@@ -49,7 +49,7 @@ module.exports = class extends React.Component {
   fetch = (department) => {
     this.setState({ _loading: true, courses: [] });
     apiClient(department).then((courses) => {
-      this.setState({ _loading: false, courses: [...courses] });
+      this.setState({ _loading: false, courses: courses });
     });
   };
 

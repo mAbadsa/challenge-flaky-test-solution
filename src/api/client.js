@@ -14,7 +14,7 @@ module.exports = {
       setTimeout(() => {
         localStorage.people = JSON.stringify(people);
         return resolve({success: true});
-      }, between(3500, 4500));
+      }, between(3500, 3999));
     });
   }
 };
